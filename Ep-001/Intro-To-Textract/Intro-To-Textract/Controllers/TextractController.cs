@@ -8,7 +8,7 @@ namespace Intro_To_Textract.Controllers
 {
     public class Textract : Controller
     {
-        private const string _bucketName = "{YourBucketNameHere}"
+        private const string _bucketName = "{YourBucketNameHere}";
         private IAmazonS3 _s3 = new AmazonS3Client(RegionEndpoint.USWest2);
 
         public IActionResult Index()
